@@ -1,14 +1,13 @@
-// criando variaveis
-let nome = prompt("Qual seu nome?"); //string
-// convertendo string para number
-let idade = Number.parseInt(prompt("Qual sua idade?")); 
-// variavel booleanas usando operadores racionais
-let maiorIdade = idade >=18;
-let Nome = nome == "maria";
-// resultado usando operadores lógicos
-alert(Nome && maiorIdade);
-alert(Nome || maiorIdade);
-alert(!maiorIdade)
+// variáveis
 
-let msg = maiorIdade ? "Maior de idade" : "Menor de idade";
-alert(msg);
+let nome = document.querySelector("#nome")
+let idade = document.querySelector("#idade")
+let botao = document.querySelector("#btn")
+let msg = document.querySelector("#msg")
+
+// função do botão
+botao.addEventListener("click", () => {
+    msg.textContent = 
+    "Olá " + nome.value + ", você tem "
+    + idade.value +" anos"
+})
